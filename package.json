@@ -3,20 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate:types": "contentful-typescript-codegen --output src/@types/contentful.d.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.32",
-    "@types/react-dom": "18.0.11",
+    "@contentful/rich-text-react-renderer": "^15.16.3",
+    "@contentful/rich-text-types": "^16.0.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "assert": "^2.0.0",
+    "contentful": "^10.0.0-beta-v10.41",
+    "dotenv": "^16.0.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
+    "prettier": "^2.8.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "contentful-management": "^10.31.5",
+    "contentful-typescript-codegen": "^3.4.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }
